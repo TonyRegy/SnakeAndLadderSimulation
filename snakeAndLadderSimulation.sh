@@ -23,4 +23,16 @@ case $t in
         ;;
 esac
 }
+function game(){
+while [ $currentPosition -le 100 ]
+do
+	((COUNT++))
+	position=$currentPosition
+	snakeLadderNoplay
+if [ $currentPosition -lt 0 ]
+then
+	currentPosition=0
+fi
+done
+}
 

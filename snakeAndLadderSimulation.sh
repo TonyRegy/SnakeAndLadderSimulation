@@ -36,3 +36,18 @@ fi
 done
 }
 
+function win(){
+game
+if [ $position -ne 100 ]
+then
+while [ $currentPosition -ne 100 ]
+do
+if [ $currentPosition -gt 100 ]
+then
+currentPosition=$position
+fi
+((COUNT++))
+snakeLadderNoplay
+done
+fi
+}

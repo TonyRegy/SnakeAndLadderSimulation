@@ -33,6 +33,7 @@ if [ $currentPosition -lt 0 ]
 then
 	currentPosition=0
 fi
+echo "Position of player after dieroll" $COUNT "is" $currentPosition
 done
 }
 
@@ -48,6 +49,13 @@ currentPosition=$position
 fi
 ((COUNT++))
 snakeLadderNoplay
+echo "Position of player after die roll" $COUNT "is" $currentPosition
 done
+echo "player won the match reached" $currentPosition
+echo "die rolled for" $COUNT
+else
+echo "die rolled for" $COUNT "times"
+echo "player won the match reached" $position
 fi
 }
+win
